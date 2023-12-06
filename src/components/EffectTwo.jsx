@@ -6,13 +6,14 @@ const EffectTwo = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setSeconds((prevSeconds) => prevSeconds + 1)
-        }, 1000);
+        }, 1000)
 
         return () => clearInterval(intervalId);
     }, [])
+
   return (
     <div>
-        <h3>Seconds: {seconds}</h3>
+        <h3>Seconds: { seconds }</h3>
     </div>
   )
 }
