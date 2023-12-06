@@ -3,6 +3,7 @@ import './App.css'
 import State from './components/State'
 import Effect from './components/Effect'
 import EffectTwo from './components/EffectTwo'
+import AuthStatus from './components/AuthStatus'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
     <>
       {/* <State /> */}
       {/* <Effect /> */}
-      <EffectTwo />
+      {/* <EffectTwo /> */}
+      <AuthStatus />
     </>
   )
 }
